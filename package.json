@@ -1,15 +1,15 @@
 {
-    "name": "openapi-typescript-codegen",
-    "version": "0.23.0",
+    "name": "@powdergg/openapi-typescript-codegen",
+    "version": "0.1.0",
     "description": "Library that generates Typescript clients based on the OpenAPI specification.",
     "author": "Ferdi Koomen",
-    "homepage": "https://github.com/ferdikoomen/openapi-typescript-codegen",
+    "homepage": "https://github.com/gustvision/openapi-typescript-codegen",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ferdikoomen/openapi-typescript-codegen.git"
+        "url": "git+https://github.com/gustvision/openapi-typescript-codegen.git"
     },
     "bugs": {
-        "url": "https://github.com/ferdikoomen/openapi-typescript-codegen/issues"
+        "url": "https://github.com/gustvision/openapi-typescript-codegen/issues"
     },
     "license": "MIT",
     "keywords": [
@@ -55,8 +55,7 @@
         "test:e2e": "jest --selectProjects E2E --runInBand --verbose",
         "eslint": "eslint .",
         "eslint:fix": "eslint . --fix",
-        "prepublishOnly": "npm run clean && npm run release",
-        "codecov": "codecov --token=66c30c23-8954-4892-bef9-fbaed0a2e42b"
+        "prepublishOnly": "npm run clean && npm run release"
     },
     "dependencies": {
         "camelcase": "^6.3.0",
