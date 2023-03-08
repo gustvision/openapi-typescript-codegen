@@ -1,6 +1,6 @@
 {
     "name": "@powdergg/openapi-typescript-codegen",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Library that generates Typescript clients based on the OpenAPI specification.",
     "author": "Ferdi Koomen",
     "homepage": "https://github.com/gustvision/openapi-typescript-codegen",
@@ -119,7 +119,7 @@
         "typescript": "4.8.4",
         "zone.js": "0.11.8"
     },
-    "overrides" : {
+    "overrides": {
         "rollup": "3.2.3"
     }
 }
