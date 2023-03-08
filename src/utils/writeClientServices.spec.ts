@@ -31,6 +31,7 @@ describe('writeClientServices', () => {
                 settings: () => 'settings',
                 apiError: () => 'apiError',
                 apiRequestOptions: () => 'apiRequestOptions',
+                apiRequestAdditionalOptions: () => 'apiRequestAdditionalOptions',
                 apiResult: () => 'apiResult',
                 cancelablePromise: () => 'cancelablePromise',
                 request: () => 'request',

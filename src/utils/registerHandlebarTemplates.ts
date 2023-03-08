@@ -11,6 +11,7 @@ import angularSendRequest from '../templates/core/angular/sendRequest.hbs';
 import templateCoreApiError from '../templates/core/ApiError.hbs';
 import templateCoreApiRequestOptions from '../templates/core/ApiRequestOptions.hbs';
 import templateCoreApiResult from '../templates/core/ApiResult.hbs';
+import templateCoreApiRequestAdditionalOptions from '../templates/core/ApiRequestAdditionalOptions.hbs';
 import axiosGetHeaders from '../templates/core/axios/getHeaders.hbs';
 import axiosGetRequestBody from '../templates/core/axios/getRequestBody.hbs';
 import axiosGetResponseBody from '../templates/core/axios/getResponseBody.hbs';
@@ -102,6 +103,7 @@ export interface Templates {
         request: Handlebars.TemplateDelegate;
         baseHttpRequest: Handlebars.TemplateDelegate;
         httpRequest: Handlebars.TemplateDelegate;
+        apiRequestAdditionalOptions: Handlebars.TemplateDelegate;
     };
 }
 
@@ -129,6 +131,7 @@ export const registerHandlebarTemplates = (root: {
             settings: Handlebars.template(templateCoreSettings),
             apiError: Handlebars.template(templateCoreApiError),
             apiRequestOptions: Handlebars.template(templateCoreApiRequestOptions),
+            apiRequestAdditionalOptions: Handlebars.template(templateCoreApiRequestAdditionalOptions),
             apiResult: Handlebars.template(templateCoreApiResult),
             cancelablePromise: Handlebars.template(templateCancelablePromise),
             request: Handlebars.template(templateCoreRequest),

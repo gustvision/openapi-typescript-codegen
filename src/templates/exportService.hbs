@@ -30,6 +30,7 @@ import type { BaseHttpRequest } from '../core/BaseHttpRequest';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
 {{/if}}
+import type { ApiRequestAdditionalOptions } from '../core/ApiRequestAdditionalOptions';
 
 {{#equals @root.httpClient 'angular'}}
 @Injectable({
@@ -103,13 +104,12 @@ export class {{{name}}}{{{@root.postfix}}} {
 				{{/each}}
 			},
 			{{/if}}
-			{{#if parametersHeader}}
 			headers: {
+				...opts?.headers,
 				{{#each parametersHeader}}
 				'{{{prop}}}': {{{name}}},
 				{{/each}}
 			},
-			{{/if}}
 			{{#if parametersQuery}}
 			query: {
 				{{#each parametersQuery}}
