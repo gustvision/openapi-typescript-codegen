@@ -1,4 +1,7 @@
 const getFormData = (options: ApiRequestOptions): FormData | undefined => {
+	 if (options.formData instanceof FormData) {
+		return options.formData
+	}
 	if (options.formData) {
 		const formData = new FormData();
 
