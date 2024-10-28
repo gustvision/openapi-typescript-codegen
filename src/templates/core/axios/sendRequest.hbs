@@ -5,7 +5,7 @@ const sendRequest = async <T>(
 	body: any,
 	formData: FormData | undefined,
 	headers: Record<string, string>,
-	onCancel: OnCancel
+	onCancel: OnCancel,
 	axiosClient: AxiosInstance
 ): Promise<AxiosResponse<T>> => {
 	const source = axios.CancelToken.source();
